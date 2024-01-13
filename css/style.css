@@ -2,7 +2,7 @@
     --main-bg-color: #18122B;
     --secondary-bg-color: #393053;
     --main-font-color: #443C68;
-    --auxiliary-color: #F1B4BB;
+    --auxiliary-color: #F3F8FF;
 }
 
 *{
@@ -34,7 +34,6 @@ body{
 .banner{
     background-color: var(--secondary-bg-color);
     grid-row: 1/4;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,10 +44,16 @@ body{
     margin: 80px auto;
     color: var(--auxiliary-color);
 }
-
-#banner h1{
-    font-size: 50px;
+#banner h1,h2{
     color: var(--auxiliary-color);
+    padding-left: 30px;
+    
+}
+#banner h2{
+    font-size: 70px;
+}
+.wrapper h3{
+    font-size: 30px;
 }
 .social{
     display: flex;
@@ -75,6 +80,20 @@ nav{
 }
 .about{
     background-color: var(--auxiliary-color);
+}
+.about p{
+    font-size: 20px;
+    color: var(--main-font-color);
+    margin-top: 20px;
+}
+.about h1{
+    font-size: 30px;
+    color: var(--main-font-color);
+}
+.about-wrapper{
+    width: 90%;
+    margin: 20px auto;
+    padding-top: 10px;
 
 }
 
@@ -103,4 +122,24 @@ nav{
     background-image: url(../images/pro.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* -------work page--------- */
+
+.work-container{
+    max-width: 95%;
+    height: 100vh;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-column-gap: 10px;
+}
+
+.work-display{
+    grid-column: 2/4;
+    grid-row: 1/4;
+    grid-column-gap: 10px;
+    border-bottom-right-radius: 10%;
+    background-color: var(--auxiliary-color);
 }
